@@ -1,0 +1,54 @@
+nav {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+nav .logo {
+    position: relative;
+    width: 12rem;
+    height: 5rem;
+    left: 2.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 5rem;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.menu {
+    width: 4.5rem;
+    height: 3.5rem;
+    position: relative;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: aqua;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: none;
+        transform: 5s;
+    }
+
+    nav .logo {
+        left: 0.5rem;
+    }
+
+    .menu {
+        display: block;
+    }
+}
