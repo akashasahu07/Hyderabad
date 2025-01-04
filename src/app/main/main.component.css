@@ -3,7 +3,7 @@
     position: relative;
     color: white;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,10 +27,92 @@
     letter-spacing: 0.3rem;
 }
 
+.about {
+    background-image: url(/assets/about.jpg);
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.letter {
+    width: 70vw;
+    margin: auto;
+}
+
+.about h2 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.about p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fbffec;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fbe3fa;
+    position: relative;
+    padding: 2rem;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
 @media (max-width: 768px) {
     .banner {
         background-size: contain;
         background-position: top;
+        height: 33.4vh;
     }
 
     .text {
@@ -48,5 +130,9 @@
     .text p {
         letter-spacing: 0;
         font-size: 0.8rem;
+    }
+
+    .about {
+        height: auto;
     }
 }
