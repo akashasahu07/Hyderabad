@@ -34,6 +34,7 @@
     padding-top: 5%;
     height: 100vh;
     background-size: cover;
+    top: auto;
 }
 
 .letter {
@@ -110,7 +111,7 @@
 
 @media (max-width: 768px) {
     .banner {
-        background-size: contain;
+        background-size: cover;
         background-position: top;
         height: 33.4vh;
     }
