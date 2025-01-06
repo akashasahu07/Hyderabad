@@ -2,7 +2,6 @@
     background-image: url(/assets/charminar.jpg);
     position: relative;
     color: white;
-    text-align: center;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,18 +10,21 @@
 }
 
 .text {
-    position: relative;
-    top: 10rem;
-    left: -22rem;
     line-height: 3.5rem;
+    margin-top: 12rem;
+    margin-left: 7rem;
+    text-align: center;
+    width: fit-content;
 }
 
 .text h1 {
+    font-family: "Sour Gummy", serif;
     font-size: 2.7rem;
     letter-spacing: 0.3rem;
 }
 
 .text p {
+    font-family: "Sour Gummy", serif;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
 }
@@ -117,10 +119,9 @@
     }
 
     .text {
-        position: relative;
-        top: 2.5rem;
-        left: -5.8rem;
         line-height: 1.5rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
     }
     
     .text h1 {
