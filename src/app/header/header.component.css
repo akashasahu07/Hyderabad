@@ -1,6 +1,5 @@
 nav {
     background-color: #000000;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
@@ -12,6 +11,16 @@ nav .logo {
     height: 5rem;
     left: 2.5rem;
     cursor: pointer;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: aqua;
 }
 
 nav ul {
